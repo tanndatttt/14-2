@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vietnamese">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quà 14/2</title>
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+    body 
+        {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    gap: 60px;
+        }
+    button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            background-color: #ddd;
+        }    
+    </style>
+</head>
+<body>   
+    <div class="heart-container">
+        <div class="heart"></div>
+    </div>  
+    <script src="script.js"></script>
+    <button onclick="func()"> Nhấn vào đây!!</button>
+    <script>
+        function func() 
+        {
+            window.location.href = "next.html";
+        }
+    </script>
+</body>
+</html>

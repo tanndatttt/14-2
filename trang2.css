@@ -1,0 +1,42 @@
+.loichuc
+{
+    font-size: 20px;
+    color: #ff69b4;
+    font-weight: bold;
+}
+.loichuc::before
+{
+    content: "Chúc em bé ngày 14/2 thật dui dẻ, ngày càng hạnh phúc và \A luôn cười khi bên cạnh toai 💖 ";
+    white-space: pre-wrap;
+    color: #ff69b4;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    line-height: 1.5;
+}
+.hienchu
+{
+    transform: translate(20px);
+    animation: fadeSlideup 1s ease-out forwards;
+}
+@keyframes fadeSlideup {
+to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+.heart {
+  position: fixed;
+  top: -10px;
+  z-index: 9999;
+  color: #ff69b4; 
+  font-size: 24px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh); 
+  }
+}

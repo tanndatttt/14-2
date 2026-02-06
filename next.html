@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quà 14/2</title>
+    <link rel="stylesheet" href="trang2.css">
+    </head>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+    </style>
+    <body>
+        <div class="loichuc-container">
+            <div class="loichuc"></div>
+        </div>
+        <script>
+  function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    //❤️💖🌸
+    heart.innerText = '❤️'; 
+    
+    heart.style.left = Math.random() * 100 + "vw";
+    
+    heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+    
+    heart.style.fontSize = Math.random() * 20 + 10 + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 5000);
+  }
+  setInterval(createHeart, 300);
+</script>
+    </body>
+</html>
